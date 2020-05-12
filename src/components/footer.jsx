@@ -20,7 +20,7 @@ const Footer = () => (
       &nbsp;framework, view source on&nbsp;
       <a
         className="github"
-        href="https://github.com/matthildenbrand/matthildenbrand-vue"
+        href="https://github.com/matthildenbrand/matthildenbrand-gatsby"
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
