@@ -1,0 +1,217 @@
+span.svg-wrapper {
+  &.slo {
+    svg {
+      height: 50px;
+      top: 5px;
+      &:hover {
+        transform: scale(2.2) rotate(4deg);
+        filter: drop-shadow(1px 1px 0px #fff);
+      }
+      &:hover path {
+        fill: black;
+      }
+      &:hover path.upper {
+        fill: #fbe14e;
+      }
+      &:hover path.lower {
+        fill: #003399;
+      }
+    }
+  }
+  &.makeover {
+    svg {
+      height: 41px;
+      top: 2px;
+      @media (max-width: $breakpoint-small-mobile) {
+        height: 20px;
+      }
+      &:hover {
+        transform: scale(3.2) rotate(-10deg);
+        filter: drop-shadow(1px 1px 0px #fff);
+      }
+      &:hover path {
+        fill: #f702b2;
+      }
+    }
+  }
+  &.twitch {
+    svg {
+      height: 50px;
+      top: 7px;
+      @media (max-width: $breakpoint-small-mobile) {
+        height: 26px;
+        top: 3px;
+      }
+      &:hover {
+        transform: scale(2.2) rotate(3deg);
+        filter: drop-shadow(1px 1px 0px #fff);
+      }
+      &:hover path {
+        fill: #6441a4;
+      }
+    }
+  }
+  &.samsung {
+    svg {
+      height: 19px;
+      &:hover path,
+      &:hover polygon {
+        fill: #1428a0;
+      }
+    }
+  }
+  &.blackberry {
+    svg {
+      height: 23px;
+    }
+  }
+  &.smart {
+    svg {
+      height: 25px;
+      &:hover path {
+        fill: white;
+      }
+      &:hover path.grey {
+        fill: #b8b9bb;
+      }
+      &:hover path.yellow {
+        fill: #dfa400;
+      }
+    }
+  }
+  &.usaa {
+    svg {
+      height: 23px;
+      &:hover path {
+        fill: #12395b;
+      }
+    }
+  }
+  &.signet {
+    svg {
+      height: 28px;
+    }
+  }
+  &.redux {
+    svg {
+      height: 31px;
+      &:hover path.purple {
+        fill: #7649bb;
+      }
+    }
+  }
+  &.angular {
+    svg {
+      height: 32px;
+      &:hover path {
+        fill: #b52e31;
+      }
+    }
+  }
+  &.react {
+    svg {
+      &:hover path,
+      &:hover circle,
+      &:hover rect {
+        fill: #53c1de;
+      }
+    }
+  }
+  &.cordova {
+    svg {
+      top: 5px;
+    }
+  }
+  &.ionic {
+    svg {
+      &:hover path,
+      &:hover circle,
+      &:hover rect {
+        fill: #4e8ef7;
+      }
+    }
+  }
+  &.gb {
+    svg {
+      height: 45px;
+    }
+  }
+  &.vue {
+    svg {
+      path {
+        &.a3807102-9d5f-47d9-a811-05203da4e64b {
+          fill: #5f5f5f !important;
+        }
+      }
+      &:hover {
+        path.a3807102-9d5f-47d9-a811-05203da4e64b {
+          fill: #35495e !important;
+        }
+        path.a2e92d9b-8a08-468d-a74d-4b214a7d9737 {
+          fill: #41b883 !important;
+        }
+      }
+    }
+  }
+  &.flutter {
+    svg {
+      &:hover {
+        path.f2730be1-10c4-40a7-9f58-589ad59f93ef {
+          fill: url(#e86d19c6-ed4d-4d27-ae61-ba51588f9bd9);
+        }
+        path.f2e97be6-4703-49bc-ba10-0389e08d727c {
+          fill: #36a4d4;
+        }
+        path.b70b96ac-b975-42fb-9ae8-c781e187ed81,
+        path.bec47db9-b286-4d3f-b6c6-363bd3dedeb3 {
+          fill: #03569b;
+        }
+
+        path.ba90b9d6-228a-4930-b121-edc3aae5ffa9 {
+          fill: #16b9fd;
+        }
+      }
+    }
+  }
+  &.typescript {
+    svg {
+      path.cls-2:nth-last-of-type(1),
+      path.cls-2:nth-last-of-type(2) {
+        fill: transparent;
+      }
+      &:hover path.cls-1:nth-of-type(2),
+      &:hover path:nth-child(3) {
+        fill: #007acc !important;
+      }
+    }
+  }
+  &.gatsby {
+    svg {
+      path:nth-last-of-type(2) {
+        fill: transparent;
+      }
+      &:hover path:nth-of-type(2) {
+        fill: white !important;
+      }
+      &:hover path:nth-of-type(3) {
+        fill: #663399;
+      }
+    }
+  }
+}
+
+svg {
+  height: 35px;
+  position: relative;
+  transition: $speed;
+  transition-timing-function: ease-in-out;
+  path {
+    fill: #333;
+    transition: $speed;
+    transition-timing-function: ease-in-out;
+  }
+  &:hover {
+    transform: scale(1.2);
+    z-index: 100;
+  }
+}

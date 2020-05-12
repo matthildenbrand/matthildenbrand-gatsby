@@ -1,0 +1,65 @@
+@import "variables";
+@import "breakpoints";
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  max-width: 900px;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 30px;
+  border-radius: 6px;
+  padding: 25px 60px 60px 60px;
+  @media (max-width: $breakpoint-tablet) {
+    padding: 0 20px 0 20px;
+    margin: 0;
+  }
+
+  .header {
+    float: left;
+  }
+
+  @import "svg";
+  @import "contact";
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+
+    li {
+      float: left;
+      padding-right: 40px;
+    }
+  }
+
+  p {
+    line-height: 65px;
+    padding-bottom: 45px;
+    line-height: 65px;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 19px;
+      line-height: 46px;
+    }
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+    display: inline-block;
+    cursor: pointer;
+    @media (min-width: $breakpoint-small-mobile) {
+      font-size: 13vw;
+    }
+    @media (min-width: $breakpoint-large-mobile) {
+      font-size: 15vw;
+    }
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 60px;
+    }
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}

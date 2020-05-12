@@ -1,0 +1,64 @@
+.contact {
+  float: left;
+  padding-bottom: 30px;
+  width: 100%;
+
+  ul {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    padding: 0;
+    margin: 0;
+    li {
+      padding-right: 15px;
+      @media (min-width: $breakpoint-small-mobile) {
+        padding-right: 10px;
+      }
+    }
+
+    li:last-child {
+      padding-right: 0;
+    }
+  }
+  span.svg {
+    &.email {
+      svg {
+        height: 18px;
+        @media (min-width: $breakpoint-tablet) {
+          height: 30px;
+        }
+        &:hover path {
+          fill: black;
+        }
+      }
+    }
+    &.linkedin {
+      svg {
+        &:hover path {
+          fill: #1d87be;
+        }
+      }
+    }
+    &.wordpress {
+      svg {
+        &:hover path {
+          fill: white;
+        }
+      }
+    }
+    svg {
+      @media (min-width: $breakpoint-mobile) {
+        height: 15px;
+      }
+      @media (min-width: $breakpoint-small-mobile) {
+        height: 20px;
+      }
+      @media (min-width: $breakpoint-tablet) {
+        height: 30px;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

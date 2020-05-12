@@ -1,0 +1,105 @@
+@import "variables";
+@import "background-image";
+@import "loader";
+@import "animations";
+@import "hero";
+@import "upgrade";
+@import "breakpoints";
+@import "footer";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap");
+
+.hide {
+  display: none;
+  opacity: 0;
+}
+
+.svg {
+  display: inline;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding-right: 18px;
+  a {
+    padding-bottom: 25px;
+  }
+}
+
+.full-width {
+  li {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+}
+
+body {
+  background-image: url("/images/bg/bg.jpg");
+  background-color: #c9c9c9;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  transition: $speed;
+  transition-timing-function: ease-in-out;
+
+  .play {
+    cursor: pointer;
+  }
+
+  .me {
+    position: fixed;
+    bottom: -5px;
+    right: -400px;
+    transition: $speed;
+    transition-timing-function: ease-in-out;
+    z-index: 100;
+
+    img {
+      height: 400px;
+    }
+  }
+
+  &.makeover,
+  &.rosetta,
+  &.twitch,
+  &.slo {
+    color: white;
+    .svg path,
+    .svg polygon,
+    .svg circle {
+      fill: white;
+      transition: $speed;
+      transition-timing-function: ease-in-out;
+    }
+    .line {
+      transition: $speed;
+      transition-timing-function: ease-in-out;
+      background: white;
+    }
+    .point {
+      transition: $speed;
+      transition-timing-function: ease-in-out;
+      border-left: 20px solid white;
+    }
+  }
+
+  &.hoverActive {
+    .blur {
+      transition: $speed;
+      transition-timing-function: ease-in-out;
+      filter: blur($blur);
+    }
+  }
+
+  img {
+    height: 30px;
+  }
+}

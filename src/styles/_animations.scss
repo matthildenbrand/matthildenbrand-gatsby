@@ -1,0 +1,32 @@
+.fadeIn {
+  display: block;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.toasty {
+  animation: toasty 1s;
+}
+
+@keyframes toasty {
+  0% {
+    right: -400px;
+  }
+  25% {
+    right: 0;
+  }
+  75% {
+    right: 0;
+  }
+  100% {
+    right: -400px;
+  }
+}
