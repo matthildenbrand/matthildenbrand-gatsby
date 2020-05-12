@@ -17,7 +17,7 @@ const IndexPage = () => {
         imgURL="https://www.matthildenbrand.com/img/me.png"
       />
       {count < 4 && <Loader />}
-      {count === 4 && (
+      {count >= 4 && (
         <>
           <div className="fadeIn hero-unit">
             <HeaderLinks />
