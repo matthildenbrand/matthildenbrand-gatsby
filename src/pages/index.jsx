@@ -14,10 +14,10 @@ const IndexPage = () => {
     <div id="app">
       <SEO
         title="Matt Hildenbrand"
-        imgURL="https://www.matthildenbrand.com/img/me.png"
+        imgURL="https://www.matthildenbrand.com/images/me.png"
       />
-      {count < 4 && <Loader />}
-      {count >= 4 && (
+      {count < 3 && <Loader />}
+      {count >= 3 && (
         <>
           <div className="fadeIn hero-unit">
             <HeaderLinks />
