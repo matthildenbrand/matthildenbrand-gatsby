@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Technologist`,
-    description: `Technologist based out of San Luis Obispo, CA. Always looking out for what will be the next latest and greatest.`,
+    description: `Technologist based out of Bend, OR. Always looking out for what will be the next latest and greatest.`,
     author: `@matthildenbrand`,
   },
   plugins: [
