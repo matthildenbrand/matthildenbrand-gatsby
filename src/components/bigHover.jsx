@@ -19,6 +19,20 @@ const BigHover = props => {
           />
         </span>
       )}
+      {props.title === "bend" && (
+        <span>
+          <InlineSVG
+            src={require(`!svg-inline-loader!../assets/images/svg/bend.svg`)}
+            className={`svg-wrapper ${props.title}`}
+            element="span"
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+          />
+          <span
+            className={`background-image ${isShown && "hover"} ${props.title}`}
+          />
+        </span>
+      )}
       {props.title === "makeover" && (
         <span>
           <InlineSVG

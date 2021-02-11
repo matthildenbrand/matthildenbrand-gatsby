@@ -48,9 +48,9 @@ const IndexPage = () => {
           onLoad={() => setCount(prevCount => prevCount + 1)}
         />
         <img
-          src="/images/bg/slo.gif"
+          src="/images/bg/bend.gif"
           rel="preload"
-          alt="SLO"
+          alt="bend"
           onLoad={() => setCount(prevCount => prevCount + 1)}
         />
         <img

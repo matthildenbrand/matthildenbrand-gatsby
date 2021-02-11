@@ -18,6 +18,27 @@ span.svg-wrapper {
       }
     }
   }
+  &.bend {
+    svg {
+      height: 60px;
+      top: 5px;
+      &:hover {
+        transform: scale(3.0) rotate(-10deg);
+        filter: drop-shadow(1px 1px 0px #fff);
+      }
+      &:hover {
+        path {
+          fill: black;
+        }
+        path.cls-1{
+          fill: white;
+        }
+      }
+      path.cls-1{
+        fill: transparent;
+      }
+    }
+  }
   &.makeover {
     svg {
       height: 41px;

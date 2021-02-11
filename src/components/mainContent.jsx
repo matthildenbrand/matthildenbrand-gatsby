@@ -7,13 +7,13 @@ const MainContent = () => {
       <p>
         Technologist currently residing in&nbsp;
         <a
-          href="https://www.slocal.com/"
+          href="https://www.visitbend.com/"
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
-          <BigHover title="slo" />
+          <BigHover title="bend" />
         </a>
-        . Enjoys creating amazing web and mobile experiences using the latest
+        &nbsp;Oregon. Enjoys creating amazing web and mobile experiences using the latest
         and greatest nerd tech out there. Plays bass guitar in 80's pop cover
         band&nbsp;
         <a
@@ -23,7 +23,7 @@ const MainContent = () => {
         >
           <BigHover title="makeover" />
         </a>
-        &nbsp;and can sometimes be seen streaming his awesome gaming skills
+        &nbsp;and can sometimes be seen streaming his pogger gaming skills
         on&nbsp;
         <a
           href="https://www.twitch.tv/matt_lousy/"
@@ -33,11 +33,6 @@ const MainContent = () => {
           <BigHover title="twitch" />
         </a>
         .
-      </p>
-      <p className="second-section">
-        With close to 20 years of building and delivering amazing experiences to
-        your computer and phone screens, I have worked with many tech frameworks
-        and brands.
       </p>
     </>
   )
