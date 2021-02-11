@@ -14,7 +14,7 @@ const MainContent = () => {
           <BigHover title="bend" />
         </a>
         &nbsp;Oregon. Enjoys creating amazing web and mobile experiences using the latest
-        and greatest nerd tech out there. Plays bass guitar in 80's pop cover
+        and greatest nerd tech out there. <br/><br/>Plays bass guitar in 80's pop cover
         band&nbsp;
         <a
           href="https://totallymakeover.com/"
